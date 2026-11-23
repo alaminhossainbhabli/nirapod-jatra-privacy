@@ -41,14 +41,20 @@
       font-size: 16px;
       color: rgba(255, 255, 255, 0.92);
     }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
     .btn-download {
       display: inline-block;
       background: #10b981;
       color: #052e16;
       font-weight: 700;
-      font-size: 17px;
+      font-size: 16px;
       text-decoration: none;
-      padding: 15px 28px;
+      padding: 14px 26px;
       border-radius: 12px;
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
       transition: transform 0.15s ease, background 0.15s ease;
@@ -57,8 +63,23 @@
       background: #34d399;
       transform: translateY(-1px);
     }
+    .btn-mirror {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 12px;
+      transition: background 0.15s ease;
+    }
+    .btn-mirror:hover {
+      background: rgba(255, 255, 255, 0.24);
+    }
     .meta {
-      margin-top: 14px;
+      margin-top: 16px;
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
@@ -124,9 +145,14 @@
     <p class="subtitle">
       Personal Safety Timer &amp; Family Emergency Alert App — share live GPS status and instant offline SOS with trusted family members.
     </p>
-    <a class="btn-download" href="https://drive.google.com/file/d/1QQnW1xicYwTdRIwPf1IvKpjLb-96JFaY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
-      📥 Download Official APK (v3.0)
-    </a>
+    <div class="btn-group">
+      <a class="btn-download" href="https://github.com/alaminhossainbhabli/nirapod-jatra-privacy/releases/download/v3.0/Nirapod-Jatra.apk">
+        📥 Direct Download APK (v3.0)
+      </a>
+      <a class="btn-mirror" href="https://drive.google.com/file/d/1QQnW1xicYwTdRIwPf1IvKpjLb-96JFaY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+        ☁️ Mirror Link (Google Drive)
+      </a>
+    </div>
     <p class="meta">Size: 2.79 MB • Signed Release • Version 3.0 • Package: com.alamin.nirapodjatra</p>
   </header>
 
@@ -158,7 +184,7 @@
     <section class="card">
       <h2>📲 How to Install</h2>
       <ol class="steps">
-        <li>Tap <strong>Download Official APK (v3.0)</strong> above and save <strong>Nirapod-Jatra.apk</strong>.</li>
+        <li>Tap <strong>Direct Download APK (v3.0)</strong> (or the Google Drive mirror) above and save <strong>Nirapod-Jatra.apk</strong>.</li>
         <li>Open the downloaded file and allow <strong>Install from this source</strong> if prompted by Android.</li>
         <li>Open <strong>Nirapod Jatra</strong>, set your trusted family contact, and stay safe on every journey.</li>
       </ol>
@@ -174,4 +200,4 @@
     <p style="margin-top:6px;">&copy; 2026 Nirapod Jatra. Built for personal safety.</p>
   </footer>
 </body>
-        </html>
+                                                                                                                  </html>
