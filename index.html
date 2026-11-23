@@ -5,29 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Nirapod Jatra</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 780px; margin: 32px auto; padding: 0 18px; line-height: 1.65; color: #222; }
-    h1, h2 { color: #1565C0; }
-    .meta { color: #555; font-size: 14px; margin-bottom: 24px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 820px;
+      margin: 28px auto;
+      padding: 0 18px 40px;
+      line-height: 1.7;
+      color: #1f2937;
+      background-color: #ffffff;
+    }
+    h1 { color: #0d47a1; font-size: 26px; margin-bottom: 6px; }
+    h2 { color: #1565c0; font-size: 19px; margin-top: 26px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    .meta { color: #4b5563; font-size: 14px; margin-bottom: 20px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .box {
+      background: #f3f7fc;
+      border-left: 4px solid #1565c0;
+      padding: 12px 14px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    a { color: #1565c0; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy — Nirapod Jatra</h1>
-  <p class="meta">Effective Date: November 23, 2026 | Contact: alaminhossainbhabli@gmail.com</p>
+  <p class="meta">
+    <strong>Effective Date:</strong> November 23, 2026<br />
+    <strong>Developer:</strong> Al Amin Hossain<br />
+    <strong>Contact Email:</strong> <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>
+  </p>
 
-  <p><strong>Nirapod Jatra</strong> is a personal safety timer application designed to help travelers share emergency alerts and live safety status with trusted family members.</p>
+  <div class="box">
+    <strong>Summary:</strong> Nirapod Jatra is a 100% free, ad-free personal safety timer app. We do not sell, rent, or share your personal data with advertisers or data brokers.
+  </div>
+
+  <p>This Privacy Policy explains how <strong>Nirapod Jatra</strong> collects, uses, and protects information when you use our Android mobile application.</p>
 
   <h2>1. Information We Collect and Use</h2>
   <ul>
-    <li><strong>Location Data (Fine &amp; Background Location):</strong> Collected only when you start an active safety journey or when an emergency timer expires, so your approved family guardian (or your saved offline SMS contact) can receive your coordinates and Google Maps link.</li>
-    <li><strong>Anonymous Identifiers &amp; Pair Code:</strong> The app uses Firebase Anonymous Authentication (an anonymous UID) and a randomly generated 8-digit Pair Code to connect you with your approved guardian and to prevent brute-force abuse (blocking devices after 5 invalid code attempts). We do not collect your name, email address, or personal profile.</li>
-    <li><strong>Emergency SMS Number (Optional):</strong> If you save a family mobile number for offline SMS alerts, it is stored locally on your device using AES-256 encrypted storage and is never uploaded to our servers. SMS messages are sent directly from your device only during an emergency.</li>
-    <li><strong>Battery Level:</strong> Used during an active journey to alert your approved guardian if your battery drops to 5% or below.</li>
+    <li><strong>Location Data (Precise &amp; Background Location):</strong> Your GPS/network coordinates are collected <em>only</em> when you actively start a safety journey or when an emergency timer expires without check-in. This allows your approved family guardian (and/or your saved offline SMS contact) to receive your location and Google Maps link in an emergency.</li>
+    <li><strong>Anonymous User ID &amp; 8-Digit Pair Code:</strong> We use Firebase Anonymous Authentication (an anonymous UID) and a randomly generated 8-digit Pair Code to link travelers with their approved family guardians and to enforce brute-force protection (blocking devices after 5 invalid code attempts). We do not collect your real name, email address, or personal profile on our servers.</li>
+    <li><strong>Emergency SMS Phone Number (Optional):</strong> If you choose to save a family member's phone number for offline emergency SMS alerts, it is stored locally on your device inside AES-256 encrypted storage and is never uploaded to our servers.</li>
+    <li><strong>Device Battery Level:</strong> Checked during an active safety journey so your approved guardian can be alerted automatically if your phone battery drops to 5% or below.</li>
   </ul>
 
-  <h2>2. Data Security &amp; Third-Party Services</h2>
-  <p>We use Google Firebase (Authentication and Cloud Firestore) solely to transmit journey status and emergency alerts over encrypted HTTPS connections. Local preferences are encrypted with AES-256. We do not sell, rent, or share your data with advertisers or third parties, and the app contains no ads.</p>
+  <h2>2. App Permissions Explained</h2>
+  <ul>
+    <li><strong>Precise Location (<code>ACCESS_FINE_LOCATION</code>):</strong> Needed to obtain accurate coordinates for your safety check-ins and emergency alerts.</li>
+    <li><strong>Background Location (<code>ACCESS_BACKGROUND_LOCATION</code>):</strong> Needed so live location updates and emergency alerts continue working reliably even when your phone screen is locked or the app is in the background during an active journey.</li>
+    <li><strong>Send SMS (<code>SEND_SMS</code>):</strong> Used strictly on-device during an expired safety timer or low-battery emergency to send an offline SMS with your Google Maps link to your saved emergency number when internet is unavailable.</li>
+    <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Used to display active journey status, connection alerts, and emergency alarms.</li>
+    <li><strong>Exact Alarm &amp; Foreground Service:</strong> Used to wake the device precisely when your safety timer ends and keep safety monitoring active during a trip.</li>
+  </ul>
 
-  <h2>3. Your Control &amp; Data Deletion</h2>
-  <p>You can stop watching, clear your saved SMS number, or mark yourself safe at any time inside the app. Uninstalling the app removes all locally encrypted data. For any privacy questions or data deletion requests, contact us at <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>.</p>
+  <h2>3. Third-Party Services</h2>
+  <p>Nirapod Jatra uses <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore) solely to authenticate sessions anonymously, transmit live journey/emergency status to approved guardians, and check for app updates. You can review Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+  <h2>4. Data Security &amp; Retention</h2>
+  <ul>
+    <li>All network communication with Firebase uses encrypted HTTPS/TLS connections.</li>
+    <li>Local app preferences, Pair Codes, and optional emergency phone numbers are encrypted on-device using Android <strong>AES-256 EncryptedSharedPreferences</strong>.</li>
+    <li>We display <strong>no advertisements</strong> and use no third-party ad-tracking SDKs.</li>
+    <li>Trip status records are kept in Firestore solely for active safety functionality; locally stored data is permanently deleted if you clear app data or uninstall the app.</li>
+  </ul>
+
+  <h2>5. Children's Privacy</h2>
+  <p>Nirapod Jatra is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided information through the app, please contact us so we can address it promptly.</p>
+
+  <h2>6. Your Control &amp; Data Deletion</h2>
+  <p>You can mark yourself safe, stop watching, or clear your saved emergency SMS number at any time inside the app. If you have questions about your data, want to request deletion of a server-side trip/block record, or need device unblock support, contact us at <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>.</p>
+
+  <h2>7. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with an updated effective date.</p>
 </body>
-  </html>
+                                      </html>
