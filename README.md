@@ -1,3 +1,4 @@
+
 # 🛡️ Nirapod Jatra — Personal Safety Timer (Android)
 
 **Nirapod Jatra** is a 100% free, ad-free personal safety timer app designed to help travelers share live safety status, GPS coordinates, and instant emergency alerts with trusted family members.
@@ -13,6 +14,7 @@
 - **7 Languages:** English, বাংলা, हिन्दी, தமிழ், తెలుగు, اردو, 中文.
 
 ## 📄 Links & Support
+- **Official Download Page:** https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/download.html
 - **Privacy Policy & Terms:** https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/
 - **Developer:** Al Amin Hossain
 - **Contact & Support:** alaminhossainbhabli@gmail.com
