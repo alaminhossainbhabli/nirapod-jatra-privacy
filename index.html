@@ -3,81 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Nirapod Jatra</title>
+  <title>Privacy Policy &amp; Terms - Nirapod Jatra</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 820px;
+      max-width: 880px;
       margin: 28px auto;
-      padding: 0 18px 40px;
-      line-height: 1.7;
+      padding: 0 18px 48px;
+      line-height: 1.72;
       color: #1f2937;
       background-color: #ffffff;
     }
     h1 { color: #0d47a1; font-size: 26px; margin-bottom: 6px; }
-    h2 { color: #1565c0; font-size: 19px; margin-top: 26px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    h2 { color: #1565c0; font-size: 19px; margin-top: 28px; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }
     .meta { color: #4b5563; font-size: 14px; margin-bottom: 20px; }
     ul { padding-left: 20px; }
     li { margin-bottom: 8px; }
     .box {
       background: #f3f7fc;
       border-left: 4px solid #1565c0;
-      padding: 12px 14px;
+      padding: 13px 15px;
       border-radius: 6px;
       margin: 16px 0;
     }
+    .warn {
+      background: #fff8e1;
+      border-left: 4px solid #e65100;
+      padding: 13px 15px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background-color: #eff6ff; color: #0d47a1; font-weight: 600; }
+    code { background: #f3f4f6; padding: 2px 5px; border-radius: 4px; font-size: 13px; }
     a { color: #1565c0; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — Nirapod Jatra</h1>
+  <h1>Privacy Policy &amp; Terms — Nirapod Jatra</h1>
   <p class="meta">
-    <strong>Effective Date:</strong> November 23, 2026<br />
-    <strong>Developer:</strong> Al Amin Hossain<br />
-    <strong>Contact Email:</strong> <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>
+    <strong>Effective Date:</strong> November 23, 2026 | <strong>Last Updated:</strong> November 23, 2026<br />
+    <strong>Developer:</strong> Al Amin Hossain | <strong>Platform:</strong> Android (7.0+)<br />
+    <strong>Support &amp; Privacy Email:</strong> <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>
   </p>
 
   <div class="box">
-    <strong>Summary:</strong> Nirapod Jatra is a 100% free, ad-free personal safety timer app. We do not sell, rent, or share your personal data with advertisers or data brokers.
+    <strong>Core Commitment:</strong> Nirapod Jatra is a 100% free, ad-free personal safety timer application. We never sell, rent, or share your personal data with advertisers or data brokers.
   </div>
 
-  <p>This Privacy Policy explains how <strong>Nirapod Jatra</strong> collects, uses, and protects information when you use our Android mobile application.</p>
+  <h2>1. Data Safety &amp; Collection Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data Category</th>
+        <th>Collected / Processed</th>
+        <th>Shared With</th>
+        <th>Encrypted?</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Precise &amp; Background Location</td>
+        <td>Yes (only during active trip or emergency)</td>
+        <td>Approved guardian / saved SMS contact only</td>
+        <td>Yes (HTTPS/TLS)</td>
+        <td>Live tracking &amp; SOS coordinates</td>
+      </tr>
+      <tr>
+        <td>Anonymous Firebase UID</td>
+        <td>Yes (auto-generated)</td>
+        <td>Google Firebase</td>
+        <td>Yes (HTTPS/TLS)</td>
+        <td>Auth &amp; 5-attempt brute-force block</td>
+      </tr>
+      <tr>
+        <td>8-Digit Pair Code</td>
+        <td>Yes (random)</td>
+        <td>Only with guardian you share it with</td>
+        <td>Yes (AES-256 &amp; HTTPS)</td>
+        <td>Linking traveler &amp; guardian</td>
+      </tr>
+      <tr>
+        <td>Emergency SMS Number</td>
+        <td>Optional (user-entered)</td>
+        <td>Never uploaded; on-device SMS only</td>
+        <td>Yes (AES-256 local)</td>
+        <td>Offline emergency SMS fallback</td>
+      </tr>
+      <tr>
+        <td>Device Battery Level</td>
+        <td>Yes (during active trip)</td>
+        <td>Approved guardian only</td>
+        <td>Yes (HTTPS/TLS)</td>
+        <td>Low-battery (&le;5%) emergency alert</td>
+      </tr>
+      <tr>
+        <td>Name, Email, Contacts, Photos, Ads ID</td>
+        <td>No</td>
+        <td>No</td>
+        <td>N/A</td>
+        <td>Not collected</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <h2>1. Information We Collect and Use</h2>
+  <h2>2. Permissions &amp; Why We Need Them</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Permission</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>ACCESS_FINE_LOCATION</code> &amp; <code>ACCESS_COARSE_LOCATION</code></td>
+        <td>Gets accurate coordinates for safety check-ins and SOS alerts.</td>
+      </tr>
+      <tr>
+        <td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+        <td>Keeps 30-second live updates and emergency SOS working even when your screen is locked during an active trip.</td>
+      </tr>
+      <tr>
+        <td><code>SEND_SMS</code></td>
+        <td>Sends an offline emergency SMS with a Google Maps link to your saved family number if the timer expires without internet.</td>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td>Shows active trip notifications, guardian connection alerts, and emergency alarms.</td>
+      </tr>
+      <tr>
+        <td><code>FOREGROUND_SERVICE</code>, <code>WAKE_LOCK</code> &amp; <code>USE_EXACT_ALARM</code></td>
+        <td>Ensures the safety timer wakes the device and fires emergency alerts on time.</td>
+      </tr>
+      <tr>
+        <td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td>
+        <td>Optional setting so battery savers do not delay emergency alerts.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Security, Consent &amp; Anti-Abuse Controls</h2>
   <ul>
-    <li><strong>Location Data (Precise &amp; Background Location):</strong> Your GPS/network coordinates are collected <em>only</em> when you actively start a safety journey or when an emergency timer expires without check-in. This allows your approved family guardian (and/or your saved offline SMS contact) to receive your location and Google Maps link in an emergency.</li>
-    <li><strong>Anonymous User ID &amp; 8-Digit Pair Code:</strong> We use Firebase Anonymous Authentication (an anonymous UID) and a randomly generated 8-digit Pair Code to link travelers with their approved family guardians and to enforce brute-force protection (blocking devices after 5 invalid code attempts). We do not collect your real name, email address, or personal profile on our servers.</li>
-    <li><strong>Emergency SMS Phone Number (Optional):</strong> If you choose to save a family member's phone number for offline emergency SMS alerts, it is stored locally on your device inside AES-256 encrypted storage and is never uploaded to our servers.</li>
-    <li><strong>Device Battery Level:</strong> Checked during an active safety journey so your approved guardian can be alerted automatically if your phone battery drops to 5% or below.</li>
+    <li><strong>Traveler Consent:</strong> Guardians can only view your status after you tap <strong>Allow</strong>. You can <strong>Reject</strong> or <strong>Block</strong> anyone at any time (3 rejections auto-block).</li>
+    <li><strong>Brute-Force Protection:</strong> 5 invalid Pair Code attempts block the offending device. Unblocking requires an Admin review via <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>.</li>
+    <li><strong>On-Device Protection:</strong> Saved Pair Codes and SMS numbers are masked on-screen (<code>********</code>) and protected by fingerprint/device lock. Local data uses <strong>AES-256 EncryptedSharedPreferences</strong> (<code>allowBackup="false"</code>).</li>
+    <li><strong>Network &amp; Integrity:</strong> All server traffic uses HTTPS/TLS (<code>usesCleartextTraffic="false"</code>), and the app checks cryptographic signature integrity to prevent tampered/modified builds.</li>
   </ul>
 
-  <h2>2. App Permissions Explained</h2>
+  <h2>4. Third-Party Services &amp; Data Retention</h2>
+  <p>Nirapod Jatra uses <strong>Google Firebase</strong> (Authentication &amp; Cloud Firestore) strictly to sync safety status and check app updates. Firebase may process data in international data centers under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Local data is erased when you clear data or uninstall the app.</p>
+
+  <h2>5. Your Rights &amp; Children's Privacy</h2>
+  <p>You may revoke permissions in Android Settings, clear your SMS number, or stop watching inside the app anytime. For server-side deletion requests, email <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>. This app is not directed to children under 13 without parental supervision.</p>
+
+  <h2>6. Emergency Disclaimer &amp; Terms of Use</h2>
+  <div class="warn">
+    <strong>Important Safety Notice:</strong> Nirapod Jatra is a personal safety companion tool and is <strong>not</strong> a replacement for official emergency services (such as 999, 911, or 112), police, or medical responders. Alert delivery depends on device battery, GPS signal, mobile network/SMS balance, and internet availability. Always contact local emergency authorities directly in life-threatening situations.
+  </div>
+
+  <h2>7. সংক্ষিপ্ত বাংলা বিবরণ (Bangla Summary)</h2>
   <ul>
-    <li><strong>Precise Location (<code>ACCESS_FINE_LOCATION</code>):</strong> Needed to obtain accurate coordinates for your safety check-ins and emergency alerts.</li>
-    <li><strong>Background Location (<code>ACCESS_BACKGROUND_LOCATION</code>):</strong> Needed so live location updates and emergency alerts continue working reliably even when your phone screen is locked or the app is in the background during an active journey.</li>
-    <li><strong>Send SMS (<code>SEND_SMS</code>):</strong> Used strictly on-device during an expired safety timer or low-battery emergency to send an offline SMS with your Google Maps link to your saved emergency number when internet is unavailable.</li>
-    <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Used to display active journey status, connection alerts, and emergency alarms.</li>
-    <li><strong>Exact Alarm &amp; Foreground Service:</strong> Used to wake the device precisely when your safety timer ends and keep safety monitoring active during a trip.</li>
+    <li><strong>নিরাপদ যাত্রা</strong> একটি ১০০% ফ্রি এবং বিজ্ঞাপনমুক্ত ব্যক্তিগত নিরাপত্তা অ্যাপ।</li>
+    <li>আপনার নাম, ইমেইল, ছবি বা কন্টাক্ট লিস্ট আমরা সংগ্রহ করি না। শুধু যাত্রা চালু থাকলেই আপনার অনুমোদিত অভিভাবকের কাছে লোকেশন ও ব্যাটারি তথ্য পাঠানো হয়।</li>
+    <li>জরুরি SMS-এর মোবাইল নাম্বার ও পেয়ার কোড আপনার ফোনের ভেতরেই <strong>AES-256</strong> এনক্রিপশনে সুরক্ষিত থাকে।</li>
+    <li>যেকোনো প্রশ্ন, ডেটা ডিলিট বা আনব্লক সহায়তার জন্য ইমেইল করুন: <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a></li>
   </ul>
-
-  <h2>3. Third-Party Services</h2>
-  <p>Nirapod Jatra uses <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore) solely to authenticate sessions anonymously, transmit live journey/emergency status to approved guardians, and check for app updates. You can review Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
-
-  <h2>4. Data Security &amp; Retention</h2>
-  <ul>
-    <li>All network communication with Firebase uses encrypted HTTPS/TLS connections.</li>
-    <li>Local app preferences, Pair Codes, and optional emergency phone numbers are encrypted on-device using Android <strong>AES-256 EncryptedSharedPreferences</strong>.</li>
-    <li>We display <strong>no advertisements</strong> and use no third-party ad-tracking SDKs.</li>
-    <li>Trip status records are kept in Firestore solely for active safety functionality; locally stored data is permanently deleted if you clear app data or uninstall the app.</li>
-  </ul>
-
-  <h2>5. Children's Privacy</h2>
-  <p>Nirapod Jatra is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided information through the app, please contact us so we can address it promptly.</p>
-
-  <h2>6. Your Control &amp; Data Deletion</h2>
-  <p>You can mark yourself safe, stop watching, or clear your saved emergency SMS number at any time inside the app. If you have questions about your data, want to request deletion of a server-side trip/block record, or need device unblock support, contact us at <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>.</p>
-
-  <h2>7. Changes to This Privacy Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with an updated effective date.</p>
 </body>
-                                      </html>
+  </html>
