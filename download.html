@@ -4,158 +4,175 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Download Nirapod Jatra — Personal Safety Timer (Android)</title>
+  <meta name="description" content="Download Nirapod Jatra (নিরাপদ যাত্রা) — 100% free, ad-free personal safety timer and family emergency alert app for Android 7.0+." />
   <style>
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1.65;
+      color: #1e293b;
+      line-height: 1.6;
     }
     .hero {
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      background: linear-gradient(135deg, #0f3d91 0%, #1d64d8 100%);
       color: #ffffff;
       text-align: center;
-      padding: 44px 18px 38px;
+      padding: 48px 20px 56px;
     }
     .badge {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.18);
-      padding: 5px 14px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 6px 16px;
       border-radius: 999px;
       font-size: 13px;
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 18px;
     }
-    .hero h1 { margin: 6px 0 8px; font-size: 30px; }
-    .hero p { max-width: 620px; margin: 0 auto 22px; font-size: 15px; opacity: 0.95; }
+    .hero h1 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+    .hero p.subtitle {
+      max-width: 580px;
+      margin: 0 auto 28px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.92);
+    }
     .btn-download {
       display: inline-block;
-      background: #00e676;
-      color: #062814;
-      text-decoration: none;
+      background: #10b981;
+      color: #052e16;
       font-weight: 700;
       font-size: 17px;
-      padding: 14px 28px;
+      text-decoration: none;
+      padding: 15px 28px;
       border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+      transition: transform 0.15s ease, background 0.15s ease;
     }
-    .meta-row {
+    .btn-download:hover {
+      background: #34d399;
+      transform: translateY(-1px);
+    }
+    .meta {
       margin-top: 14px;
       font-size: 13px;
-      opacity: 0.9;
+      color: rgba(255, 255, 255, 0.85);
     }
     .container {
-      max-width: 860px;
-      margin: 24px auto;
-      padding: 0 16px 40px;
+      max-width: 760px;
+      margin: -24px auto 40px;
+      padding: 0 16px;
     }
     .card {
       background: #ffffff;
-      border-radius: 14px;
-      padding: 20px;
-      margin-bottom: 18px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      padding: 24px 20px;
+      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+      margin-bottom: 20px;
     }
     .card h2 {
-      margin-top: 0;
-      color: #0d47a1;
-      font-size: 19px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
+      font-size: 20px;
+      color: #0f3d91;
+      margin-bottom: 16px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .feat {
+    .feature {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 12px 14px;
-      font-size: 14px;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
     }
-    .feat strong { display: block; color: #1565c0; margin-bottom: 4px; }
-    .note {
-      background: #fff8e1;
-      border-left: 4px solid #ef6c00;
-      padding: 12px 14px;
-      border-radius: 6px;
+    .feature:last-child { margin-bottom: 0; }
+    .feature h3 {
+      font-size: 15px;
+      color: #0f3d91;
+      margin-bottom: 4px;
+    }
+    .feature p {
       font-size: 14px;
+      color: #475569;
+    }
+    ol.steps {
+      padding-left: 20px;
+      font-size: 14px;
+      color: #334155;
+    }
+    ol.steps li {
+      margin-bottom: 8px;
     }
     .footer {
       text-align: center;
       font-size: 13px;
-      color: #4b5563;
-      margin-top: 24px;
+      color: #64748b;
+      padding: 12px 16px 32px;
     }
-    .footer a { color: #1565c0; text-decoration: none; font-weight: 600; }
+    .footer a {
+      color: #1d64d8;
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <div class="badge">100% Free &bull; No Ads &bull; Android 7.0+</div>
+  <header class="hero">
+    <div class="badge">100% Free • No Ads • Android 7.0+</div>
     <h1>🛡️ Nirapod Jatra (নিরাপদ যাত্রা)</h1>
-    <p>Personal Safety Timer &amp; Family Emergency Alert App — share live GPS status and instant offline SOS with trusted family members.</p>
-    <a class="btn-download" href="https://drive.google.com/file/d/1zqDJvLHkM5uz0qQhrxINxdS3B9JhcbU9/view?usp=drivesdk" target="_blank" rel="noopener">
-      📥 Download Official APK (v2.0)
+    <p class="subtitle">
+      Personal Safety Timer &amp; Family Emergency Alert App — share live GPS status and instant offline SOS with trusted family members.
+    </p>
+    <a class="btn-download" href="https://drive.google.com/file/d/1QQnW1xicYwTdRIwPf1IvKpjLb-96JFaY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+      📥 Download Official APK (v3.0)
     </a>
-    <div class="meta-row">Size: 2.79 MB &bull; Signed Release &bull; Version 2.0</div>
-  </div>
+    <p class="meta">Size: 2.66 MB • Signed Release • Version 3.0 • Package: com.alamin.nirapodjatra</p>
+  </header>
 
-  <div class="container">
-    <div class="card">
+  <main class="container">
+    <section class="card">
       <h2>✨ Key Features</h2>
-      <div class="grid">
-        <div class="feat">
-          <strong>⏱️ Exact Safety Timer</strong>
-          Preset &amp; custom durations with reliable wake-up alarms and HH:MM:SS countdown.
-        </div>
-        <div class="feat">
-          <strong>📍 Live Tracking &amp; Battery SOS</strong>
-          30-second GPS &amp; battery updates with automatic alert if battery drops to &le;5%.
-        </div>
-        <div class="feat">
-          <strong>📩 Offline Emergency SMS</strong>
-          Sends automatic SMS with Google Maps link in BD, IN, PK, and CN when offline.
-        </div>
-        <div class="feat">
-          <strong>🔒 Strong Privacy &amp; Lock</strong>
-          Hidden Pair Codes, explicit Allow/Reject/Block approval, fingerprint lock &amp; AES-256 encryption.
-        </div>
-        <div class="feat">
-          <strong>🌐 7 Languages Supported</strong>
-          English, বাংলা, हिन्दी, தமிழ், తెలుగు, اردو, and 中文.
-        </div>
-        <div class="feat">
-          <strong>🛡️ Verified Release Signature</strong>
-          Anti-tamper signature check protects against modified or fake builds.
-        </div>
+      <div class="feature">
+        <h3>⏱️ Exact Safety Timer</h3>
+        <p>Preset &amp; custom durations with reliable wake-up alarms and HH:MM:SS countdown.</p>
       </div>
-    </div>
+      <div class="feature">
+        <h3>📍 Live Tracking &amp; Battery SOS</h3>
+        <p>30-second GPS &amp; battery updates with automatic low-battery SOS alerts (&le;5%).</p>
+      </div>
+      <div class="feature">
+        <h3>📩 Offline Emergency SMS</h3>
+        <p>Sends your GPS location via Google Maps link to your trusted family contact when needed.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Privacy &amp; Biometric Protection</h3>
+        <p>Encrypted storage, masked Pair Code &amp; SMS number, and device-lock verification for sensitive actions.</p>
+      </div>
+      <div class="feature">
+        <h3>🌐 7 Languages Supported</h3>
+        <p>English, বাংলা, हिन्दी, தமிழ், తెలుగు, اردو, and 中文.</p>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>📲 How to Install (ইনস্টল করার নিয়ম)</h2>
-      <ol>
-        <li>Tap <strong>Download Official APK (v2.0)</strong> above and download <code>Nirapod-Jatra.apk</code>.</li>
-        <li>Open the downloaded file and allow installation from your browser if asked.</li>
+    <section class="card">
+      <h2>📲 How to Install</h2>
+      <ol class="steps">
+        <li>Tap <strong>Download Official APK (v3.0)</strong> above and save <strong>Nirapod-Jatra.apk</strong>.</li>
+        <li>If an older test version is installed, uninstall it first before installing v3.0.</li>
+        <li>Open the downloaded file and allow <strong>Install from this source</strong> if prompted by Android.</li>
+        <li>Open <strong>Nirapod Jatra</strong>, set your trusted family contact, and stay safe on every journey.</li>
       </ol>
-      <div class="note">
-        <strong>Note on Google Play Protect:</strong> Since the app is currently distributed directly outside Play Store and uses emergency SMS &amp; background location permissions, Android may show a standard warning. Tap <strong>Install anyway</strong> to proceed safely.
-      </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="footer">
-      <p>
-        <a href="https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/">Privacy Policy &amp; Terms</a>
-        &nbsp;&bull;&nbsp;
-        Support: <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>
-      </p>
-      <p>Developer: Al Amin Hossain</p>
-    </div>
-  </div>
+  <footer class="footer">
+    <p>
+      <a href="https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/">Privacy Policy &amp; Terms</a>
+      &nbsp;•&nbsp;
+      Support: <a href="mailto:alaminhossainbhabli@gmail.com">alaminhossainbhabli@gmail.com</a>
+    </p>
+    <p style="margin-top:6px;">&copy; 2026 Nirapod Jatra. Built for personal safety.</p>
+  </footer>
 </body>
-  </html>
+        </html>
