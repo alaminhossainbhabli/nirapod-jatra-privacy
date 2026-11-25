@@ -98,7 +98,26 @@
     .card h2 {
       font-size: 20px;
       color: #0f3d91;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
+    }
+    .video-desc {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 14px;
+    }
+    .video-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #081b4b;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+    }
+    .video-wrap video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
     }
     .feature {
       background: #f8fafc;
@@ -158,6 +177,17 @@
 
   <main class="container">
     <section class="card">
+      <h2>🎬 Complete Video Guide (ব্যবহার নির্দেশিকা)</h2>
+      <p class="video-desc">Watch step-by-step how to set up your Pair Code, Offline SMS alert, Safety Timer, and Live Family Tracking.</p>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata">
+          <source src="Nirapod-Jatra.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>✨ Key Features</h2>
       <div class="feature">
         <h3>⏱️ Exact Safety Timer</h3>
@@ -200,4 +230,4 @@
     <p style="margin-top:6px;">&copy; 2026 Nirapod Jatra. Built for personal safety.</p>
   </footer>
 </body>
-                                                                                                                  </html>
+        </html>
