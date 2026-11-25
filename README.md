@@ -15,6 +15,7 @@
 | **Direct Download (1-Click)** | [Download Nirapod-Jatra.apk (v3.0)](https://github.com/alaminhossainbhabli/nirapod-jatra-privacy/releases/download/v3.0/Nirapod-Jatra.apk) |
 | **Mirror Download (Drive)** | [Download via Google Drive (v3.0)](https://drive.google.com/file/d/1QQnW1xicYwTdRIwPf1IvKpjLb-96JFaY/view?usp=drivesdk) |
 | **Download Portal** | [Official Download Website](https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/download.html) |
+| **Video Guide (Bangla)** | [Watch Complete App Tutorial](https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/download.html) |
 
 ---
 
@@ -38,5 +39,6 @@
 ## 🔗 Official Links & Support
 
 - **Download Page:** [https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/download.html](https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/download.html)
+- **Video Guide (MP4):** [https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/Nirapod-Jatra.mp4](https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/Nirapod-Jatra.mp4)
 - **Privacy Policy & Terms of Use:** [https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/](https://alaminhossainbhabli.github.io/nirapod-jatra-privacy/)
 - **Developer Support:** [alaminhossainbhabli@gmail.com](mailto:alaminhossainbhabli@gmail.com)
